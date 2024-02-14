@@ -3,6 +3,10 @@
 :root {
   --color-white: #fff;
   --color-purple: rgb(94, 46, 198);
+  --color-gray: #7f7f7f;
+  --color-black-white: rgb(47, 47, 47);
+  --hue-color: 190;
+  --first-color: hsl(var(--hue-color), 69%, 61%);
 }
 
 * {
@@ -14,29 +18,54 @@
   outline: none;
   list-style-type: none;
   font-family: "Baloo Paaji 2", sans-serif;
-  transition: all 0.5s ease-in-out;
+  border: none;
+  transition: transform 0.5s ease-in-out;
 }
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  background: #efefef;
 }
 
 .container {
-  position: fixed;
+  min-width: 100%;
+  min-height: 100vh;
+}
+
+.title-section {
+  text-align: center;
+  font-size: 4rem;
+  line-height: 6rem;
+  font-weight: 900;
+  color: var(--color-black-white);
+}
+
+.purple {
+  color: var(--color-purple);
+}
+/*HEADER*/
+
+.home-header {
   width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
+  height: 100vh;
   background-size: cover;
-  background-image: url("./imagens/luminaria-background.png");
+  background-image: url("./imagens/gradient.png");
 }
 
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 3.3rem;
+  padding: 1rem;
 }
 
 .header .logo {
@@ -50,12 +79,13 @@ html {
   display: flex;
   align-items: center;
   column-gap: 3rem;
-  margin-right: 5rem;
-  position: relative;
+  padding-right: 5rem;
 }
 .header nav ul {
   display: flex;
   column-gap: 3rem;
+  position: relative;
+  z-index: 1000;
 }
 
 .header nav ul li a {
@@ -83,26 +113,270 @@ html {
   display: none;
   opacity: 0;
   transform: translateY(-20px);
-  transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
-@media (max-width: 665px) {
-  .header nav {
-    justify-content: center;
-  }
-  .header nav ul {
-    position: absolute;
-    top: 100%;
+/*HOME*/
+
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+}
+
+.home .my-profile h1 {
+  font-size: 6rem;
+  line-height: 6rem;
+  font-weight: 900;
+  color: var(--color-black-white);
+}
+
+.home .my-profile .icons {
+  display: flex;
+  align-items: center;
+}
+
+.home .my-profile .icons i {
+  margin-bottom: -1rem;
+  font-size: 2rem;
+  margin-left: 2rem;
+  cursor: pointer;
+  color: #333;
+}
+.home .my-profile .icons i a {
+  cursor: pointer;
+}
+
+.home .my-profile span {
+  font-size: 2.6rem;
+  color: var(--color-gray);
+}
+
+.btn {
+  display: block;
+  padding: 0.7rem 3rem;
+  font-size: 1.7rem;
+  background-color: var(--color-purple);
+  color: #fff;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: rgb(78, 31, 181);
+  transition: 0.5s ease-in-out;
+}
+
+/*ABOUT ME*/
+section {
+  margin: 5rem 0;
+}
+.about-me-box {
+  margin-top: 4rem;
+  display: flex;
+  width: 95%;
+  align-items: center;
+}
+
+.about-me-itens {
+  margin-top: -3rem;
+}
+.about-me-box .image-programer {
+  margin: 3.8rem;
+}
+
+.about-me-box .image-programer img {
+  width: 35rem;
+  height: 35rem;
+}
+
+.about-me-box .about-me-itens span {
+  font-size: 2.3rem;
+  color: var(--color-black-white);
+}
+
+.about-me-box .about-me-itens p {
+  font-size: 1.9rem;
+  color: var(--color-black-white);
+}
+
+/*SERVICES*/
+
+.services-box {
+  margin: 10rem 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  gap: 3rem;
+  justify-content: center;
+}
+
+.services-box .service-item {
+  background: var(--color-white);
+  padding: 10rem 6rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.services-box .service-item:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.services-box .service-item i {
+  font-size: 3rem;
+  color: var(--first-color);
+}
+
+.services-box .service-item i,
+.services-box .service-item h1,
+.services-box .service-item span {
+  color: var(--first-color);
+}
+
+.services-box .service-item span {
+  font-size: 1.6rem;
+  margin-top: -1rem;
+}
+.projects {
+  position: relative;
+  width: 100%;
+}
+
+.projects-container {
+  display: flex;
+  overflow-x: hidden; /* Oculta os itens que estiverem além da área visível */
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.carousel {
+  width: 80vw;
+  padding: 1rem;
+}
+
+.projects-box {
+  margin: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(
+    100vw - 10rem
+  ); /* Largura dos itens do carrossel (tela inteira menos as margens) */
+}
+
+.projects-box .project-terra-do-cafe {
+  position: relative;
+  width: 38rem;
+}
+
+.projects-box .project-terra-do-cafe img {
+  width: 38rem;
+  clip-path: polygon(0 15%, 100% 15%, 100% 85%, 0 85%);
+}
+
+.project-content {
+  display: flex;
+  text-align: center;
+  margin-left: 3rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30rem;
+  gap: 1rem;
+}
+
+.project-content h1 {
+  font-size: 2rem;
+}
+
+.project-content .description {
+  font-size: 1.7rem;
+  color: var(--color-gray);
+}
+
+.wrapper {
+  max-width: 100vw;
+}
+
+.wrapper i {
+  z-index: 1000;
+  position: absolute;
+  top: 67%;
+  transform: translateY(-50%);
+  height: 46px;
+  width: 46px;
+  background-color: #fff;
+  text-align: center;
+  line-height: 46px;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.wrapper i:first-child {
+  left: 5%;
+}
+
+.wrapper i:last-child {
+  right: 5%;
+}
+.wrapper .carousel {
+  font-size: 0px;
+  cursor: pointer;
+  overflow-x: auto;
+  display: flex;
+  margin: 2rem;
+  scroll-behavior: smooth;
+}
+
+/*MEDIA QUERY*/
+
+@media (max-width: 858px) {
+  .about-me-box {
     flex-direction: column;
   }
 
-  .header nav ul li a {
+  .about-me-itens {
+    margin-top: 3rem;
+    text-align: center;
+    width: 90%;
+  }
+}
+
+@media (max-width: 665px) {
+  html {
+    font-size: 55%;
+  }
+  .header nav .navbar-itens {
+    position: absolute;
+    background: var(--color-white);
+    width: 20rem;
+    top: 100%;
+    right: 0%;
+    border-radius: 1rem;
+    height: 30rem;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .header nav .navbar-itens li a {
+    display: flex;
+    margin: 1.5rem;
+    padding: 0.5rem;
     font-size: 2rem;
-    color: var(--color-white);
+    color: var(--color-black-white);
     font-weight: bold;
   }
 
-  .header nav ul li a:hover {
+  .header nav .navbar-itens li a:hover {
     color: var(--color-purple);
   }
 }

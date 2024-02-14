@@ -17,26 +17,249 @@
   </head>
   <body>
     <div class="container">
-      <header class="header">
-        <h1 class="logo">Kauê Marin</h1>
+      <!--SECTION HEADER AND HOME-->
+      <div class="home-header">
+        <header class="header">
+          <h1 class="logo">Kauê Marin</h1>
 
-        <nav>
-          <ul class="navbar-itens active">
-            <li><a href="home">Home</a></li>
-            <li><a href="home">Sobre mim</a></li>
-            <li><a href="home">Projetos</a></li>
-            <li><a href="home">Contato</a></li>
-          </ul>
+          <nav>
+            <ul class="navbar-itens active">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about-me">Sobre mim</a></li>
+              <li><a href="#services">serviços</a></li>
+              <li><a href="#projects">Projetos</a></li>
+              <li><a href="#contact">Contato</a></li>
+            </ul>
 
-          <div class="menu-open">
-            <i class="fa-solid fa-bars"></i>
+            <div class="menu-open">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <div class="menu-closed active">
+              <i class="fa-solid fa-x"></i>
+            </div>
+          </nav>
+        </header>
+
+        <!--SECTION HOME-->
+        <section id="home" class="home">
+          <div class="my-profile">
+            <div class="icons">
+              <h1>OI!</h1>
+              <a href="https://www.linkedin.com/in/kaue-marin/" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+              <a href="https://github.com/Kaue-Marin" target="_blank">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+            <h1>EU SOU KAUÊ</h1>
+            <span>Desenvolvedor Front-End</span>
+            <button class="btn">meu currículo</button>
+          </div>
+        </section>
+      </div>
+
+      <!--SECTION ABOUTE ME-->
+      <section id="about-me" class="about-me">
+        <h1 class="title-section">Sobre Mim</h1>
+
+        <div class="about-me-box">
+          <div class="image-programer">
+            <img
+              src="./imagens/21004063.jpg"
+              alt="Programador mexendo no computador"
+            />
           </div>
 
-          <div class="menu-closed active">
-            <i class="fa-solid fa-x"></i>
+          <div class="about-me-itens">
+            <span>Quem sou eu?</span>
+            <p>
+              Olá! Sou um desenvolvedor web apaixonado por tecnologia e
+              inovação. Meu objetivo é criar experiências digitais envolventes e
+              funcionais. Sempre em busca de desafios estimulantes, estou
+              comprometido em aprender e me manter atualizado com as mais
+              recentes tecnologias do setor. Valorizo a colaboração em equipe e
+              estou pronto para contribuir para projetos inovadores. Vamos criar
+              algo incrível juntos!
+            </p>
           </div>
-        </nav>
-      </header>
+        </div>
+      </section>
+
+      <!--SECTION SERVICES-->
+      <section id="services" class="services">
+        <h1 class="title-section">Serviços</h1>
+        <div class="services-box">
+          <div class="service-item">
+            <i class="fa-solid fa-chart-line"></i>
+            <h2>data analytic</h2>
+            <span>ver agora</span>
+          </div>
+          <div class="service-item">
+            <i class="fa-solid fa-chart-line"></i>
+            <h2>data analytic</h2>
+            <span>ver agora</span>
+          </div>
+          <div class="service-item">
+            <i class="fa-solid fa-chart-line"></i>
+            <h2>data analytic</h2>
+            <span>ver agora</span>
+          </div>
+        </div>
+      </section>
+
+      <!--SECTION PROJECTS-->
+      <section id="projects" class="projects">
+        <h1 class="title-section">Projetos</h1>
+        <div class="wrapper">
+          <i id="left" class="fa-solid fa-angle-left"></i>
+          <div class="carousel">
+            <div class="projects-box">
+              <div class="project-terra-do-cafe">
+                <img
+                  src="../portfolio/imagens/pagina-terra-do-cafe.png"
+                  alt="layout terra do café"
+                  class="layoutProject"
+                />
+              </div>
+              <div class="project-content">
+                <h1>Terra Do café</h1>
+                <span class="description">
+                  Data analitical dashboard adaptable to all devices, with ui
+                  components and animated interactions.
+                </span>
+                <button class="btn">Demo</button>
+              </div>
+            </div>
+            <div class="projects-box">
+              <div class="project-terra-do-cafe">
+                <img
+                  src="../portfolio/imagens/pagina-terra-do-cafe.png"
+                  alt="layout terra do café"
+                  class="layoutProject"
+                />
+              </div>
+              <div class="project-content">
+                <h1>Terra Do café</h1>
+                <span class="description">
+                  Data analitical dashboard adaptable to all devices, with ui
+                  components and animated interactions.
+                </span>
+                <button class="btn">Demo</button>
+              </div>
+            </div>
+            <div class="projects-box">
+              <div class="project-terra-do-cafe">
+                <img
+                  src="../portfolio/imagens/pagina-terra-do-cafe.png"
+                  alt="layout terra do café"
+                  class="layoutProject"
+                />
+              </div>
+              <div class="project-content">
+                <h1>Terra Do café</h1>
+                <span class="description">
+                  Data analitical dashboard adaptable to all devices, with ui
+                  components and animated interactions.
+                </span>
+                <button class="btn">Demo</button>
+              </div>
+            </div>
+            <div class="projects-box">
+              <div class="project-terra-do-cafe">
+                <img
+                  src="../portfolio/imagens/pagina-terra-do-cafe.png"
+                  alt="layout terra do café"
+                  class="layoutProject"
+                />
+              </div>
+              <div class="project-content">
+                <h1>Terra Do café</h1>
+                <span class="description">
+                  Data analitical dashboard adaptable to all devices, with ui
+                  components and animated interactions.
+                </span>
+                <button class="btn">Demo</button>
+              </div>
+            </div>
+            <div class="projects-box">
+              <div class="project-terra-do-cafe">
+                <img
+                  src="../portfolio/imagens/pagina-terra-do-cafe.png"
+                  alt="layout terra do café"
+                  class="layoutProject"
+                />
+              </div>
+              <div class="project-content">
+                <h1>Terra Do café</h1>
+                <span class="description">
+                  Data analitical dashboard adaptable to all devices, with ui
+                  components and animated interactions.
+                </span>
+                <button class="btn">Demo</button>
+              </div>
+            </div>
+            <div class="projects-box">
+              <div class="project-terra-do-cafe">
+                <img
+                  src="../portfolio/imagens/pagina-terra-do-cafe.png"
+                  alt="layout terra do café"
+                  class="layoutProject"
+                />
+              </div>
+              <div class="project-content">
+                <h1>Terra Do café</h1>
+                <span class="description">
+                  Data analitical dashboard adaptable to all devices, with ui
+                  components and animated interactions.
+                </span>
+                <button class="btn">Demo</button>
+              </div>
+            </div>
+            <div class="projects-box">
+              <div class="project-terra-do-cafe">
+                <img
+                  src="../portfolio/imagens/pagina-terra-do-cafe.png"
+                  alt="layout terra do café"
+                  class="layoutProject"
+                />
+              </div>
+              <div class="project-content">
+                <h1>Terra Do café</h1>
+                <span class="description">
+                  Data analitical dashboard adaptable to all devices, with ui
+                  components and animated interactions.
+                </span>
+                <button class="btn">Demo</button>
+              </div>
+            </div>
+            <div class="projects-box">
+              <div class="project-terra-do-cafe">
+                <img
+                  src="../portfolio/imagens/pagina-terra-do-cafe.png"
+                  alt="layout terra do café"
+                  class="layoutProject"
+                />
+              </div>
+              <div class="project-content">
+                <h1>Terra Do café</h1>
+                <span class="description">
+                  Data analitical dashboard adaptable to all devices, with ui
+                  components and animated interactions.
+                </span>
+                <button class="btn">Demo</button>
+              </div>
+            </div>
+          </div>
+          <i id="right" class="fa-solid fa-angle-right"></i>
+        </div>
+      </section>
+
+      <!--SECTION CONTACT-->
+      <section id="contact" class="contact">
+        <div class="contact-informations"></div>
+      </section>
     </div>
   </body>
 </html>
