@@ -16,14 +16,16 @@ menuClosed.addEventListener("click", toggleMenuVisibility);
 // mudar propriedades do menu após scroll da página
 window.addEventListener("scroll", function () {
   const isScrolled = window.scrollY > 0;
+  const root = document.documentElement;
   if (isScrolled) {
-    menuClosed.classList.add("active");
-    menuOpen.classList.remove("active");
-    nav.classList.add("active");
+    root.style.setProperty("--header-color", "hsl(var(--hue-color), 69%, 61%)");
+    document.querySelector(".header").style.background = "var(--color-white)";
   } else {
     menuOpen.classList.add("active");
     menuClosed.classList.remove("active");
     nav.classList.remove("active");
+    root.style.setProperty("--header-color", "#fff");
+    document.querySelector(".header").style.background = "none";
   }
 });
 
@@ -36,12 +38,41 @@ let isDragStart = false,
   prevPageX,
   prevScrollLeft;
 
-let firstImgWidth = firstImg.clientWidth + 100;
+let firstImgWidth = firstImg.clientWidth; //firstImg.clientWidth + 100;
 
+// Função para rolar o carrossel para o próximo item
+function scrollToNextItem() {
+  const scrollPosition = carousel.scrollLeft + carousel.offsetWidth; // Posição de rolagem para o próximo item
+  const items = carousel.querySelectorAll(".projects-box");
+  const firstItemWidth = items[0].offsetWidth;
+  const spaceBetweenItems = 20; // Espaço desejado entre os itens (você pode ajustar esse valor conforme necessário)
+
+  // Encontrar o próximo item na direção desejada
+  let nextItemIndex = -1;
+  for (let i = 0; i < items.length; i++) {
+    const item = items[i];
+    if (item.offsetLeft >= scrollPosition) {
+      nextItemIndex = i;
+      break;
+    }
+  }
+
+  // Se o próximo item for encontrado, rolar para ele com o espaço à esquerda
+  if (nextItemIndex !== -1) {
+    const nextItem = items[nextItemIndex];
+    const scrollLeftPosition = nextItem.offsetLeft - spaceBetweenItems;
+    carousel.scrollLeft = scrollLeftPosition;
+  }
+}
+
+// Adicionar evento de clique aos ícones de seta
 arrowIcons.forEach((icon) => {
   icon.addEventListener("click", () => {
-    console.log(icon);
-    carousel.scrollLeft += icon.id == "left" ? -firstImgWidth : firstImgWidth;
+    if (icon.id === "left") {
+      carousel.scrollLeft -= carousel.offsetWidth; // Rolar para o item anterior
+    } else {
+      scrollToNextItem(); // Rolar para o próximo item
+    }
   });
 });
 
