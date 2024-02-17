@@ -1,0 +1,36 @@
+/*ABOUT-ME SKILLS*/
+
+.skills-box {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin: 15rem 0;
+}
+
+.skills-box .skills-item {
+  padding: 4rem 7rem;
+  background-color: var(--color-white);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30rem;
+}
+
+.skills-box .skills-item:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.skills-box .skills-item img {
+  width: 5rem;
+}
+
+.skills-box .skills-item h2 {
+  font-size: 2rem;
+  color: var(--color-black-white);
+}

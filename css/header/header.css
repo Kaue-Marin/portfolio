@@ -1,0 +1,70 @@
+/*HEADER*/
+
+.home-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw; /* Define a largura igual à largura da janela do navegador */
+  height: 100vh; /* Define a altura igual à altura da janela do navegador */
+  background-size: cover;
+  background: linear-gradient(
+    360deg,
+    hsla(0, 0%, 94%) 0%,
+    hsla(0, 0%, 94%) 0%,
+    hsla(195, 100%, 50%, 1) 100%
+  );
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  z-index: 1000;
+  transition: 0.5s ease-in-out;
+}
+
+.header .logo {
+  font-size: 3rem;
+  width: 15rem;
+  margin-left: 3.5rem;
+  color: var(--header-color);
+}
+
+.header nav {
+  display: flex;
+  align-items: center;
+  column-gap: 3rem;
+  padding-right: 5rem;
+}
+.header nav ul {
+  display: flex;
+  column-gap: 3rem;
+  position: relative;
+  z-index: 1000;
+}
+
+.header nav ul li a {
+  font-size: 2rem;
+  color: var(--header-color);
+  font-weight: bold;
+}
+
+.header nav ul li a:hover {
+  color: var(--color-purple);
+}
+
+.header .menu-bar {
+  margin-left: 1rem;
+}
+
+.header .menu-open i,
+.header .menu-closed i {
+  font-size: 3rem;
+  cursor: pointer;
+  color: var(--header-color);
+}

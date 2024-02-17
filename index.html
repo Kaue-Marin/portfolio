@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="./imagens/favicon.svg" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="./imagens/logo/favicon.svg" />
+    <link rel="stylesheet" href="./css/style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -12,6 +12,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    a
     <script src="script.js" defer></script>
     <title>my-portfolio</title>
   </head>
@@ -55,7 +56,12 @@
             </div>
             <h1>EU SOU KAUÊ</h1>
             <span>Desenvolvedor Front-End</span>
-            <button class="btn">meu currículo</button>
+            <a
+              href="./imagens/Kauê Marin - cv.pdf"
+              download="./imagens/Kauê Marin - cv.pdf"
+              target="_blank"
+              ><button class="btn">meu currículo</button></a
+            >
           </div>
         </section>
       </div>
@@ -67,7 +73,7 @@
         <div class="about-me-box">
           <div class="image-programer">
             <img
-              src="./imagens/21004063.jpg"
+              src="./imagens/about-me img/21004063-removebg.png"
               alt="Programador mexendo no computador"
             />
           </div>
@@ -75,13 +81,13 @@
           <div class="about-me-itens">
             <span>Quem sou eu?</span>
             <p>
-              Olá! Sou um desenvolvedor web apaixonado por tecnologia e
-              inovação. Meu objetivo é criar experiências digitais envolventes e
-              funcionais. Sempre em busca de desafios estimulantes, estou
-              comprometido em aprender e me manter atualizado com as mais
-              recentes tecnologias do setor. Valorizo a colaboração em equipe e
-              estou pronto para contribuir para projetos inovadores. Vamos criar
-              algo incrível juntos!
+              Sou um desenvolvedor front cursando Desenvolvimento de Sistemas.
+              Meu objetivo é criar designs responsivos e proporcionar uma
+              excelente experiência do usuário. Tenho conhecimentos básicos em
+              análise de requisitos e estou familiarizado com a criação de
+              sistemas seguindo o padrão LGPD. e atualmente atuo como
+              freelancer. Estou em busca de novas oportunidades para expandir
+              minha carreira e contribuir em projetos.
             </p>
           </div>
         </div>
@@ -90,27 +96,27 @@
       <!--SECTION SERVICES-->
       <section id="skills" class="skills">
         <h1 class="title-section">tecnologias</h1>
-        
+
         <div class="skills">
           <div class="skills-box">
             <div class="skills-item">
-              <i class="fa-brands fa-html5"></i>
+              <img src="./imagens/tecnologies/html-5.png" alt="" />
               <h2>HTML5</h2>
             </div>
             <div class="skills-item">
-              <i class="fa-brands fa-html5"></i>
+              <img src="./imagens/tecnologies/css-3.png" alt="" />
               <h2>CSS3</h2>
             </div>
             <div class="skills-item">
-              <i class="fa-brands fa-html5"></i>
+              <img src="./imagens/tecnologies/js.png" alt="" />
               <h2>JAVASCRIPT</h2>
             </div>
             <div class="skills-item">
-              <i class="fa-brands fa-html5"></i>
+              <img src="./imagens/tecnologies/git.png" alt="" />
               <h2>GIT</h2>
             </div>
             <div class="skills-item">
-              <i class="fa-brands fa-html5"></i>
+              <img src="./imagens/tecnologies/github.png" alt="" />
               <h2>GITHUB</h2>
             </div>
           </div>
@@ -124,9 +130,9 @@
           <i id="left" class="fa-solid fa-angle-left"></i>
           <div class="carousel">
             <div class="projects-box">
-              <div class="project-terra-do-cafe">
+              <div class="projects-img">
                 <img
-                  src="../portfolio/imagens/pagina-terra-do-cafe.png"
+                  src="../portfolio/imagens/projects/pagina-terra-do-cafe.png"
                   alt="layout terra do café"
                   class="layoutProject"
                 />
@@ -134,50 +140,61 @@
               <div class="project-content">
                 <h1>Terra Do café</h1>
                 <span class="description">
-                  Data analitical dashboard adaptable to all devices, with ui
-                  components and animated interactions.
+                  O projeto "Terra do Café" é um e-commerce desenvolvido com
+                  HTML, CSS, JavaScript e tecnologias de backend para
+                  proporcionar uma experiência de compra de produtos
+                  relacionados ao café..
                 </span>
-                <button class="btn">Demo</button>
+                <a href="https://terra-do-cafe.onrender.com/" target="_blank"
+                  ><button class="btn">Demo</button></a
+                >
               </div>
             </div>
             <div class="projects-box">
-              <div class="project-terra-do-cafe">
+              <div class="projects-img">
                 <img
-                  src="../portfolio/imagens/pagina-terra-do-cafe.png"
+                  src="../portfolio/imagens/projects/pagina-Snapclima.png"
                   alt="layout terra do café"
                   class="layoutProject"
                 />
               </div>
               <div class="project-content">
-                <h1>Terra Do café</h1>
+                <h1>Snapclima</h1>
                 <span class="description">
-                  Data analitical dashboard adaptable to all devices, with ui
-                  components and animated interactions.
+                  O SnapClima é uma aplicação web que fornece informações
+                  meteorológicas em tempo real com base na localização do
+                  usuário, utilizando tecnologias como HTML, CSS, JavaScript e
+                  integração com APIs de previsão do tempo.
                 </span>
-                <button class="btn">Demo</button>
+                <a href="https://snapclima.onrender.com/" target="_blank"
+                  ><button class="btn">Demo</button></a
+                >
               </div>
             </div>
             <div class="projects-box">
-              <div class="project-terra-do-cafe">
+              <div class="projects-img">
                 <img
-                  src="../portfolio/imagens/pagina-terra-do-cafe.png"
+                  src="../portfolio/imagens/projects/pagina-reencontrow.png"
                   alt="layout terra do café"
                   class="layoutProject"
                 />
               </div>
               <div class="project-content">
-                <h1>Terra Do café</h1>
+                <h1>Reencontrow</h1>
                 <span class="description">
-                  Data analitical dashboard adaptable to all devices, with ui
-                  components and animated interactions.
+                  Reencontrow é uma landing page desenvolvida em HTML e CSS,
+                  projetada para ser uma plataforma informativa e comunitária
+                  focada em relacionamento amoroso.
                 </span>
-                <button class="btn">Demo</button>
+                <a href="https://reencontrow.onrender.com/" target="_blank"
+                  ><button class="btn">Demo</button></a
+                >
               </div>
             </div>
             <div class="projects-box">
-              <div class="project-terra-do-cafe">
+              <div class="projects-img">
                 <img
-                  src="../portfolio/imagens/pagina-terra-do-cafe.png"
+                  src="/portfolio/portfolio/imagens/projects/pagina-htmlPro.png"
                   alt="layout terra do café"
                   class="layoutProject"
                 />
@@ -185,78 +202,14 @@
               <div class="project-content">
                 <h1>Terra Do café</h1>
                 <span class="description">
-                  Data analitical dashboard adaptable to all devices, with ui
-                  components and animated interactions.
+                  HTMLPRO é uma landing page dedicada à venda de um eBook sobre
+                  Responsividade, oferecendo instruções claras para aprender
+                  HTML e CSS em diferentes níveis de proficiência: básico,
+                  intermediário e avançado.
                 </span>
-                <button class="btn">Demo</button>
-              </div>
-            </div>
-            <div class="projects-box">
-              <div class="project-terra-do-cafe">
-                <img
-                  src="../portfolio/imagens/pagina-terra-do-cafe.png"
-                  alt="layout terra do café"
-                  class="layoutProject"
-                />
-              </div>
-              <div class="project-content">
-                <h1>Terra Do café</h1>
-                <span class="description">
-                  Data analitical dashboard adaptable to all devices, with ui
-                  components and animated interactions.
-                </span>
-                <button class="btn">Demo</button>
-              </div>
-            </div>
-            <div class="projects-box">
-              <div class="project-terra-do-cafe">
-                <img
-                  src="../portfolio/imagens/pagina-terra-do-cafe.png"
-                  alt="layout terra do café"
-                  class="layoutProject"
-                />
-              </div>
-              <div class="project-content">
-                <h1>Terra Do café</h1>
-                <span class="description">
-                  Data analitical dashboard adaptable to all devices, with ui
-                  components and animated interactions.
-                </span>
-                <button class="btn">Demo</button>
-              </div>
-            </div>
-            <div class="projects-box">
-              <div class="project-terra-do-cafe">
-                <img
-                  src="../portfolio/imagens/pagina-terra-do-cafe.png"
-                  alt="layout terra do café"
-                  class="layoutProject"
-                />
-              </div>
-              <div class="project-content">
-                <h1>Terra Do café</h1>
-                <span class="description">
-                  Data analitical dashboard adaptable to all devices, with ui
-                  components and animated interactions.
-                </span>
-                <button class="btn">Demo</button>
-              </div>
-            </div>
-            <div class="projects-box">
-              <div class="project-terra-do-cafe">
-                <img
-                  src="../portfolio/imagens/pagina-terra-do-cafe.png"
-                  alt="layout terra do café"
-                  class="layoutProject"
-                />
-              </div>
-              <div class="project-content">
-                <h1>Terra Do café</h1>
-                <span class="description">
-                  Data analitical dashboard adaptable to all devices, with ui
-                  components and animated interactions.
-                </span>
-                <button class="btn">Demo</button>
+                <a href="https://htmlpro-72z8.onrender.com/" target="_blank"
+                  ><button class="btn">Demo</button></a
+                >
               </div>
             </div>
           </div>
@@ -278,14 +231,14 @@
             </div>
             <div class="contact-informations-item">
               <div class="icon-informations">
-                <i class="fa-solid fa-phone"></i>
+                <i class="fa-solid fa-envelope"></i>
                 <h2>email</h2>
               </div>
               <span>kauemarindev@gmail.com</span>
             </div>
             <div class="contact-informations-item">
               <div class="icon-informations">
-                <i class="fa-solid fa-phone"></i>
+                <i class="fa-solid fa-location-dot"></i>
                 <h2>Localização</h2>
               </div>
               <span>são paulo, SP</span>
@@ -293,26 +246,38 @@
           </div>
 
           <div class="contact-form">
-            <form action="">
+            <form
+              action="https://formsubmit.co/kauemarindev@gmail.com"
+              method="post"
+            >
               <div class="boxInput">
-              
-                <input type="text" placeholder="nome">
+                <input type="text" name="name" placeholder="nome..." />
               </div>
-      
               <div class="boxInput">
-                
-                <input type="email" placeholder="email">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Seu e-mail"
+                  required
+                />
               </div>
-      
               <div class="boxInput">
-                
-                <textarea name="message" id="message" cols="30" rows="10" placeholder="mensagem..."></textarea>
+                <textarea
+                  name="message"
+                  id="message"
+                  cols="30"
+                  rows="10"
+                  placeholder="Sua mensagem..."
+                  required
+                ></textarea>
               </div>
-              <input type="submit" value="enviar" class="btn">
-            </form>
-          </div>
-        </div>
-        </section>
+              <input type="hidden" name="_captcha" value="false" />
+              <input
+                type="hidden"
+                name="_next"
+                value="http://127.0.0.1:5500/portfolio/portfolio/index.html"
+              />
+              <input type="submit" value="Enviar" class="btn" />
             </form>
           </div>
         </div>
