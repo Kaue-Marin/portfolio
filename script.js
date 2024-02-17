@@ -21,9 +21,6 @@ window.addEventListener("scroll", function () {
     root.style.setProperty("--header-color", "hsl(var(--hue-color), 69%, 61%)");
     document.querySelector(".header").style.background = "var(--color-white)";
   } else {
-    menuOpen.classList.add("active");
-    menuClosed.classList.remove("active");
-    nav.classList.remove("active");
     root.style.setProperty("--header-color", "#fff");
     document.querySelector(".header").style.background = "none";
   }

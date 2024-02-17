@@ -9,6 +9,9 @@
   z-index: 999;
 }
 
+.home .my-profile {
+  margin-top: -6rem;
+}
 .home .my-profile h1 {
   font-size: 6rem;
   line-height: 6rem;
