@@ -93,3 +93,10 @@ const dragStop = (e) => {
 carousel.addEventListener("mousedown", dragStart);
 carousel.addEventListener("mousemove", dragging);
 carousel.addEventListener("mouseup", dragStop);
+
+/*FORM*/
+
+document.querySelector(".btn-submit").addEventListener("click", (ev) => {
+  ev.preventDefault();
+  alert("email enviado :)");
+});
