@@ -98,5 +98,6 @@ carousel.addEventListener("mouseup", dragStop);
 
 document.querySelector(".btn-submit").addEventListener("click", (ev) => {
   ev.preventDefault();
+  window.location.href = "https://my-portfolio-dm10.onrender.com/";
   alert("email enviado :)");
 });
