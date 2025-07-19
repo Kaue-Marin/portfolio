@@ -1,0 +1,260 @@
+.experience {
+  padding: var(--spacing-20) 0;
+  background: var(--bg-primary);
+}
+
+@media (prefers-color-scheme: dark) {
+  .experience {
+    background: var(--gray-900);
+  }
+}
+
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.timeline-line {
+  position: absolute;
+  left: 32px;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: linear-gradient(180deg, var(--primary-500), var(--accent-500));
+}
+
+@media (min-width: 768px) {
+  .timeline-line {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: var(--spacing-12);
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: 24px;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 4px solid var(--bg-primary);
+  z-index: 2;
+}
+
+@media (prefers-color-scheme: dark) {
+  .timeline-dot {
+    border-color: var(--gray-900);
+  }
+}
+
+@media (min-width: 768px) {
+  .timeline-dot {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.current-dot {
+  background: #22c55e;
+  animation: pulse 2s infinite;
+}
+
+.experience-card {
+  margin-left: 64px;
+  background: var(--bg-primary);
+  border-radius: var(--radius-xl);
+  padding: var(--spacing-6);
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--border-color);
+  transition: all var(--transition-normal);
+}
+
+.experience-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-xl);
+}
+
+@media (prefers-color-scheme: dark) {
+  .experience-card {
+    background: var(--gray-800);
+  }
+}
+
+@media (min-width: 768px) {
+  .experience-card {
+    margin-left: 0;
+    width: calc(50% - 40px);
+  }
+  
+  .timeline-item:nth-child(odd) .experience-card {
+    margin-left: auto;
+  }
+}
+
+.card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: var(--spacing-4);
+}
+
+.position-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: var(--spacing-1);
+}
+
+.company-name {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--primary-500);
+  margin-bottom: var(--spacing-2);
+}
+
+.external-link-icon {
+  width: 20px;
+  height: 20px;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: color var(--transition-normal);
+}
+
+.external-link-icon:hover {
+  color: var(--primary-500);
+}
+
+.card-meta {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-2);
+  margin-bottom: var(--spacing-4);
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}
+
+@media (min-width: 640px) {
+  .card-meta {
+    flex-direction: row;
+  }
+}
+
+.meta-item {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-1);
+}
+
+.description-list {
+  list-style: none;
+  margin-bottom: var(--spacing-6);
+}
+
+.description-item {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-2);
+  margin-bottom: var(--spacing-2);
+  color: var(--text-secondary);
+}
+
+.bullet {
+  width: 8px;
+  height: 8px;
+  background: var(--primary-500);
+  border-radius: 50%;
+  margin-top: 8px;
+  flex-shrink: 0;
+}
+
+.technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-2);
+}
+
+.tech-tag {
+  padding: var(--spacing-1) var(--spacing-3);
+  background: var(--primary-100);
+  color: var(--primary-700);
+  font-size: 0.875rem;
+  border-radius: 9999px;
+  font-weight: 500;
+}
+
+@media (prefers-color-scheme: dark) {
+  .tech-tag {
+    background: rgba(0, 90, 122, 0.3);
+    color: var(--primary-300);
+  }
+}
+
+.timeline-item.current {
+  margin-bottom: 0;
+}
+
+.current-status {
+  margin-left: 64px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .current-status {
+    margin-left: 0;
+  }
+}
+
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-2);
+  background: #f0fdf4;
+  color: #15803d;
+  padding: var(--spacing-2) var(--spacing-4);
+  border-radius: 9999px;
+  font-weight: 500;
+}
+
+@media (prefers-color-scheme: dark) {
+  .status-badge {
+    background: rgba(34, 197, 94, 0.2);
+    color: #4ade80;
+  }
+}
+
+.status-indicator {
+  width: 8px;
+  height: 8px;
+  background: #22c55e;
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+
+@media (max-width: 768px) {
+  .timeline-line {
+    left: 16px;
+  }
+  
+  .timeline-dot {
+    left: 8px;
+  }
+  
+  .experience-card,
+  .current-status {
+    margin-left: 48px;
+  }
+  
+  .experience-card {
+    padding: var(--spacing-4);
+  }
+}

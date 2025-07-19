@@ -1,291 +1,55 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!doctype html>
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="shortcut icon" href="imagens/favicon.svg" type="image/x-icon" />
-    <script src="script.js" defer></script>
-    <title>my-portfolio</title>
+    
+    <!-- SEO Meta Tags -->
+    <title>Kauê Marin | Desenvolvedor Full-stack</title>
+    <meta name="description" content="Portfólio de Kauê Marin, desenvolvedor full-stack especializado em Vue.js, Laravel, Docker e React. Transformando ideias em software de qualidade." />
+    <meta name="keywords" content="desenvolvedor full-stack, Vue.js, Laravel, Docker, React, PHP, MySQL, JavaScript" />
+    <meta name="author" content="Kauê Marin" />
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Kauê Marin | Desenvolvedor Full-stack" />
+    <meta property="og:description" content="Portfólio de Kauê Marin, desenvolvedor full-stack especializado em Vue.js, Laravel, Docker e React." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://kauemarin.dev" />
+    <meta property="og:image" content="/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Kauê Marin | Desenvolvedor Full-stack" />
+    <meta name="twitter:description" content="Portfólio de Kauê Marin, desenvolvedor full-stack especializado em Vue.js, Laravel, Docker e React." />
+    <meta name="twitter:image" content="/og-image.jpg" />
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Kauê Marin",
+      "jobTitle": "Desenvolvedor Full-stack",
+      "url": "https://kauemarin.dev",
+      "email": "kauemarindev@gmail.com",
+      "alumniOf": "ETEC",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "FDC Sistemas"
+      }
+    }
+    </script>
   </head>
   <body>
-    <div class="container">
-      <!--SECTION HEADER AND HOME-->
-      <div class="home-header">
-        <header class="header">
-          <h1 class="logo">Kauê Marin</h1>
-
-          <nav>
-            <ul class="navbar-itens active"> 
-              <li><a href="#home">Home</a></li>
-              <li><a href="#about-me">Sobre mim</a></li>
-              <li><a href="#skills">tecnologias</a></li>
-              <li><a href="#projects">Projetos</a></li>
-              <li><a href="#contact">Contato</a></li>
-            </ul>
-
-            <div class="menu-open">
-              <i class="fa-solid fa-bars"></i>
-            </div>
-
-            <div class="menu-closed active">
-              <i class="fa-solid fa-x"></i>
-            </div>
-          </nav>
-        </header>
-
-        <!--SECTION HOME-->
-        <section id="home" class="home">
-          <div class="my-profile">
-            <div class="icons">
-              <h1>OI!</h1>
-              <a href="https://www.linkedin.com/in/kaue-marin/" target="_blank">
-                <i class="fa-brands fa-linkedin"></i>
-              </a>
-              <a href="https://github.com/Kaue-Marin" target="_blank">
-                <i class="fa-brands fa-github"></i>
-              </a>
-            </div>
-            <h1>EU SOU KAUÊ</h1>
-            <span>Desenvolvedor Front-End</span>
-            <a
-              href="./imagens/Kauê Marin - cv.pdf"
-              download="Kauê Marin - cv.pdf"
-              target="_blank"
-              ><button class="btn">meu currículo</button></a
-            >
-          </div>
-        </section>
-      </div>
-
-      <!--SECTION ABOUTE ME-->
-      <section id="about-me" class="about-me">
-        <h1 class="title-section">Sobre Mim</h1>
-
-        <div class="about-me-box">
-          <div class="image-programer">
-            <img
-              src="./imagens/about-me img/21004063-removebg.png"
-              alt="Programador mexendo no computador"
-            />
-          </div>
-
-          <div class="about-me-itens">
-            <span>Quem sou eu?</span>
-            <p>
-              Sou um desenvolvedor Front-End formado em Desenvolvimento de
-              Sistemas e cursando 1° semestre de sistemas de informação. Meu
-              objetivo é criar designs responsivos e proporcionar uma excelente
-              experiência do usuário. Tenho conhecimentos básicos em análise de
-              requisitos e estou familiarizado com a criação de sistemas
-              seguindo o padrão LGPD. atualmente atuo como freelancer. Estou em
-              busca de novas oportunidades para expandir minha carreira e
-              contribuir em projetos.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <!--SECTION SERVICES-->
-      <section id="skills" class="skills">
-        <h1 class="title-section">tecnologias</h1>
-
-        <div class="skills">
-          <div class="skills-box">
-            <div class="skills-item">
-              <img src="./imagens/html-5.png" alt="" />
-              <h2>HTML5</h2>
-            </div>
-            <div class="skills-item">
-              <img src="./imagens/css-3.png" alt="" />
-              <h2>CSS3</h2>
-            </div>
-            <div class="skills-item">
-              <img src="./imagens/js.png" alt="" />
-              <h2>JAVASCRIPT</h2>
-            </div>
-            <div class="skills-item">
-              <img src="./imagens/react.png" alt="" />
-              <h2>REACT</h2>
-            </div>
-            <div class="skills-item">
-              <img src="./imagens/git.png" alt="" />
-              <h2>GIT</h2>
-            </div>
-            <div class="skills-item">
-              <img src="./imagens/github.png" alt="" />
-              <h2>GITHUB</h2>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!--SECTION PROJECTS-->
-      <section id="projects" class="projects">
-        <h1 class="title-section">Projetos</h1>
-        <div class="wrapper">
-          <i id="left" class="fa-solid fa-angle-left"></i>
-          <div class="carousel">
-            <div class="projects-box">
-              <div class="projects-img">
-                <img
-                  src="imagens/pagina-terra-do-cafe.png"
-                  alt="layout terra do café"
-                  class="layoutProject"
-                />
-              </div>
-              <div class="project-content">
-                <h1>Terra Do café</h1>
-                <span class="description">
-                  O projeto "Terra do Café" é um e-commerce desenvolvido com
-                  HTML, CSS, JavaScript e tecnologias de backend para
-                  proporcionar uma experiência de compra de produtos
-                  relacionados ao café..
-                </span>
-                <a href="https://terra-do-cafe.onrender.com/" target="_blank"
-                  ><button class="btn">Demo</button></a
-                >
-              </div>
-            </div>
-            <div class="projects-box">
-              <div class="projects-img">
-                <img
-                  src="imagens/pagina-Snapclima.png"
-                  alt="layout terra do café"
-                  class="layoutProject"
-                />
-              </div>
-              <div class="project-content">
-                <h1>Snapclima</h1>
-                <span class="description">
-                  O SnapClima é uma aplicação web que fornece informações
-                  meteorológicas em tempo real com base na localização do
-                  usuário, utilizando tecnologias como HTML, CSS, JavaScript e
-                  integração com APIs de previsão do tempo.
-                </span>
-                <a href="https://snapclima.onrender.com/" target="_blank"
-                  ><button class="btn">Demo</button></a
-                >
-              </div>
-            </div>
-            <div class="projects-box">
-              <div class="projects-img">
-                <img
-                  src="imagens/pagina-reencontrow.png"
-                  alt="layout terra do café"
-                  class="layoutProject"
-                />
-              </div>
-              <div class="project-content">
-                <h1>Reencontrow</h1>
-                <span class="description">
-                  Reencontrow é uma landing page desenvolvida em HTML e CSS,
-                  projetada para ser uma plataforma informativa e comunitária
-                  focada em relacionamento amoroso.
-                </span>
-                <a href="https://reencontrow.onrender.com/" target="_blank"
-                  ><button class="btn">Demo</button></a
-                >
-              </div>
-            </div>
-            <div class="projects-box">
-              <div class="projects-img">
-                <img
-                  src="imagens/pagina-htmlPro.png"
-                  alt="layout terra do café"
-                  class="layoutProject"
-                />
-              </div>
-              <div class="project-content">
-                <h1>HTMLPRO</h1>
-                <span class="description">
-                  HTMLPRO é uma landing page dedicada à venda de um eBook sobre
-                  Responsividade, oferecendo instruções claras para aprender
-                  HTML e CSS em diferentes níveis de proficiência: básico,
-                  intermediário e avançado.
-                </span>
-                <a href="https://htmlpro-72z8.onrender.com/" target="_blank"
-                  ><button class="btn">Demo</button></a
-                >
-              </div>
-            </div>
-          </div>
-          <i id="right" class="fa-solid fa-angle-right"></i>
-        </div>
-      </section>
-
-      <!--SECTION CONTACT-->
-      <section id="contact" class="contact">
-        <h1 class="title-section">Entrar em contato</h1>
-        <div class="contact-box">
-          <div class="contact-informations">
-            <div class="contact-informations-item">
-              <div class="icon-informations">
-                <i class="fa-solid fa-phone"></i>
-                <h2>meu número</h2>
-              </div>
-              <span>+55 (11) 98035-1574</span>
-            </div>
-            <div class="contact-informations-item">
-              <div class="icon-informations">
-                <i class="fa-solid fa-envelope"></i>
-                <h2>email</h2>
-              </div>
-              <span>kauemarindev@gmail.com</span>
-            </div>
-            <div class="contact-informations-item">
-              <div class="icon-informations">
-                <i class="fa-solid fa-location-dot"></i>
-                <h2>Localização</h2>
-              </div>
-              <span>são paulo, SP</span>
-            </div>
-          </div>
-
-          <div class="contact-form">
-            <form
-              action="https://formsubmit.co/kauezudo123@gmail.com"
-              method="post"
-            >
-              <div class="boxInput">
-                <input type="text" name="name" placeholder="nome..." />
-              </div>
-              <div class="boxInput">
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="Seu e-mail"
-                  required
-                />
-              </div>
-              <div class="boxInput">
-                <textarea
-                  name="message"
-                  id="message"
-                  cols="30"
-                  rows="10"
-                  placeholder="Sua mensagem..."
-                  required
-                ></textarea>
-              </div>
-              <input type="hidden" name="_captcha" value="false" />
-              <input
-                type="hidden"
-                name="_next"
-                value="https://my-portfolio-dm10.onrender.com"
-              />
-              <button type="button" class="btn btn-submit">enviar</button>
-            </form>
-          </div>
-        </div>
-      </section>
-    </div>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
